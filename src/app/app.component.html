@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -16,6 +16,22 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul>-->
+
+
+<mat-drawer-container class="general-container">
+  <mat-drawer mode="side" opened class= "side_container">Drawer content</mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar class="top_navbar">
+      <mat-toolbar-row >
+        <span class="navbar-selected-element"><i class="material-icons" >home</i><p>Home</p></span>
+        <span class="navbar-element"><i class="material-icons">email</i><p>Messages</p></span>
+        <span class="navbar-element"><i class="material-icons">star</i><p>Wishlist</p></span>
+        <span class="navbar-element"><i class="material-icons">settings_applications</i><p>Settings</p></span>
+        <span class="navbar-element"><i class="material-icons">account_box</i><p>My account</p></span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-drawer-content>
+</mat-drawer-container>
 
 <router-outlet></router-outlet>

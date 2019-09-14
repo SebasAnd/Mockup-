@@ -1,0 +1,43 @@
+.top_navbar {
+   margin-top: 3%;
+   margin-bottom: 3%;
+   margin-left: 5%;
+   width: 90%;
+   background-color: #E6E6E6;
+}
+.navbar-element {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    flex: 1 1 auto;
+    text-align: center;
+    color:#1B3943;
+    font-size: x-small;
+    line-height: 0.001;
+  }
+
+.navbar-selected-element  {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color:#1B3943;
+    flex: 1 1 auto;
+    text-align: center;
+    color:#EEFAFF;;
+    font-size: x-small;
+    line-height: 0.001;
+  }
+
+.material-icons{
+    margin-top: 4px;
+    font-size:40px;
+ }
+  
+.side_container{
+    width: 20%;
+}
+
+.general-container{
+    background-color: #E6E6E6;
+}
