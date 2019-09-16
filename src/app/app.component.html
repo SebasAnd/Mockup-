@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -16,6 +16,77 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul>-->
+<div class="world">
+<div class="external-container">
+<div class="all-container">
+<div class= "all-top-container">
+<div class="logo-position"><img src="assets/img/Logo.png" style="margin:auto;" width="100%" height="auto -30px"></div>
+<div class="top_navbar">
+<mat-toolbar>
+    <mat-toolbar-row style ="background-color: #E6E6E6;">
+      <span class="navbar-selected-element"><i class="material-icons" style="margin-top: 4px;font-size:40px;">home</i><p>Home</p></span>
+      <span class="navbar-element"><i class="material-icons" style="margin-top: 4px;font-size:40px;">email</i><p>Messages</p></span>
+      <span class="navbar-element"><i class="material-icons" style="margin-top: 4px;font-size:40px;">star</i><p>Wishlist</p></span>
+      <span class="navbar-element"><i class="material-icons" style="margin-top: 4px;font-size:40px;">settings_applications</i><p>Settings</p></span>
+      <span class="navbar-element"><i class="material-icons" style="margin-top: 4px;font-size:40px;">account_box</i><p>My account</p></span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  </div>
+  </div>
+<mat-drawer-container class="general-container">
+  <mat-drawer mode="side" opened class= "side_container">
+    <div style="display: flex;"><img src="assets/img/light.png" style="margin:auto;margin-left: 20%" width="8%" height="15vh"><p class="side-filter-text">Smart Filters</p></div>
+    <hr class="side-line">
+    <div class="slides-menu">
+      <div style="width:25%;" ></div>
+      <div style="width:40%;height: 1%;margin:auto;margin-right:5vh;margin-top: 4vh;"><i class="material-icons" style="font-size:8vh;color:#5D5D5D;">monetization_on</i></div>
+      <div style="width:75%;height: 1%;margin:auto;margin-top: 6vh;">
+      <mat-slide-toggle 
+      [color]="color"
+      [checked]="checked"
+      [disabled]="disabled">
+      </mat-slide-toggle>
+    </div>
+    </div>
+    <div class="slides-menu">
+        <div style="width:25%;"></div>
+        <div style="width:40%;margin:auto;margin-right:5vh;margin-top: 4vh;"><i class="material-icons" style="font-size:8vh;color:#5D5D5D;">date_range</i></div>
+        <div style="width:75%;margin:auto;margin-top: 6vh;">
+        <mat-slide-toggle 
+        [color]="color"
+        [checked]="checked"
+        [disabled]="disabled">
+        </mat-slide-toggle>
+      </div>
+      </div>
+      <div class="slides-menu">
+          <div style="width:25%;"></div>
+          <div style="width:40%;margin:auto;margin-right:5vh;margin-top: 4vh;"><i class="material-icons" style="font-size:8vh;color:#5D5D5D;">favorite_border</i></div>
+          <div style="width:75%;margin:auto;margin-top: 6vh;">
+          <mat-slide-toggle 
+          [color]="color"
+          [checked]="checked"
+          [disabled]="disabled">
+          </mat-slide-toggle>
+        </div>
+        </div>
+        <div class="slides-menu" style="height: 5%;"></div>
 
-<router-outlet></router-outlet>
+      <hr class="side-line">
+      <div style="display: flex;"><div></div><p class="side-filter-text" style="text-align: center;margin-left: 4vh;margin-top: -1vh;">Status</p></div>
+      <div style="display: flex;"><div></div><input class="side-input"  placeholder="Search"></div>
+      <div style="display: flex;"><div></div><button class="side-button" >DELIVERED</button></div>
+  
+  </mat-drawer>  
+  <mat-drawer-content class = "elements-container">
+      
+    
+    
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+</div>
+</div>
+</div>
+
