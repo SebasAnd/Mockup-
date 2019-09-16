@@ -2,6 +2,8 @@
 .external-container{
   display: flex;
   background-color: #EEEEEE;
+  width: auto;
+  height: auto;
 }
 .all-container{
   display: flex;
@@ -10,8 +12,8 @@
   margin-bottom: 1.5%;
   margin-left: 1.5%;
   margin-right: 1.5%;
-  width: 98%;
-   height: 98%;
+  width: 100%;
+  height: auto;
   background-color: #E6E6E6;
 }
 .top_navbar {
@@ -65,12 +67,13 @@
   flex-direction: column;
   background-color: #E6E6E6;
   width: 20%;
+  height:auto;
 }
 
 .general-container{
     background-color: #E6E6E6;
-    height: 90%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }
 .elements-container{
   height: 63vh;
@@ -81,19 +84,44 @@
   font-size: 2.9vh;
 }
 .side-line{
+  display: flex;
   margin-left: 9%;
   margin-right: 9%;
 }
 
 .slides-menu{
   display: flex;
+  height: 15%;
   flex-direction: row; 
   rotate: 180;
-  height: 40%;
 }
 
+.side-button{
+  border: none;
+  width: 75%;
+  color:	#949494;
+  background-color:#FBFBFB;
+  padding: 2vh 1vh;
+  font-size: 2vh;
+  text-align: center;
+  margin-left: 4vh;
+  margin-top: 1vh;
+}
+.side-input{
+  border: none;
+  width: 70%;
+  color:	#949494;
+  padding: 1vh 1vh;
+  font-size: 2vh;
+  text-align: center;
+  margin-left: 4vh;
+  margin-top: -2vh;
+}
+
+
 ::ng-deep .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-thumb {
-  background-color: white; 
+  background-color: white;
+  transform: translate3d(0,0,0) !important;
   width: 6.6vh;
   height: 6.6vh;
   margin-top: -5px;
@@ -101,12 +129,13 @@
 }
 ::ng-deep .mat-slide-toggle:not(.mat-disabled) .mat-slide-toggle-bar {
   background-color: #1B3943; 
-  width: 7vh;
-  height: 4vh;
+  width: 8.7vh;
+  height: 5vh;
 }
 
 ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
   background-color: white;
+  transform: translate3d(2vh,0,0) !important;
   width: 6.6vh;
   height: 6.6vh;
   margin-top: -5px;
@@ -116,10 +145,13 @@
 
 ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
   background-color: #335160; 
-  width: 7vh;
-  height: 4vh;
+  width: 8.7vh;
+  height: 5vh;
 }
-/* 
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
+  transform: translate3d(6vh,0,0) !important;
+}
+/*
 ::ng-deep .mat-slide-toggle.mat-primary.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
   background-color: red;
 }
@@ -136,5 +168,6 @@
 ::ng-deep .mat-slide-toggle.mat-warn.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
   background-color: yellow;
 }
-*/
 
+
+*/
